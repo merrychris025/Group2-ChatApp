@@ -1,0 +1,40 @@
+<!--- MODAL EJS - Connected to Log In Page --->
+
+<!---- MODAL AREA -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span><br>
+        <h2>Hello Ka-Chika!</h2>
+        <p><center>You Have Successfully Logged In!</center></p><br>
+        <button href= "/chat" id="modal-button">NEXT</button>
+    </div>
+</div>
+
+
+<!--- FUNCTION AREA ----->
+<script>
+    const modal = document.getElementById("modal"); // Get Modal
+    const loginButton = document.getElementById("login-button"); // Get Log In Button to Open Modal
+    const span = document.getElementsByClassName("close")[0]; // Get Element to Close Modal
+    const modalButton = document.getElementById("modal-button"); // Get the Next Page Button
+
+    loginButton.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent Form Submission 
+
+    modal.style.display = "block"; // Show the Modal
+
+    modalButton.onclick = function(){
+      window.location.href = "/chat";
+    }
+    }); 
+
+    span.onclick = function(){
+        modal.style.display="none"; // Closes The Modal
+    }
+
+    window.onclick = function(event){
+        if (event.target == modal){
+            modal.style.display = "none"; // Click Anywhere, Close Modal
+        }
+    }
+</script>

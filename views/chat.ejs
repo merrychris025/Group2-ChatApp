@@ -1,0 +1,74 @@
+<!--- CHAT APP PAGE (NEXT PAGE) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- <link rel="website icon" type="png" href="img/logo.PNG"> -->
+    <title> CHIKA BOT </title>
+</head>
+    <!--- CODE OF CHAT APP -->
+    <body>
+       <!-----<div class="container-fluid">--->
+        <div class="chat-container">
+            <div class="chat-header">
+               
+                <div class="logo">
+                    <i class="fas fa-comments-alt"></i>
+                    <h3>CHIKA BOT</h3>
+                </div>
+
+                <p id="name"></p>
+                
+                <button type="submit" id="exit">
+                    <a href="/login" >EXIT</a> <!---- DIRECT TO CHAT UP ONCE SIGNED IN -->
+                    </button>    
+            </div>
+
+                <div class="chat-section">
+                    <div class="main-wrapper">
+                        <div class="chat-content">
+                            <div class="message">
+                                <div class="message-row other-message">
+                                <!----  <div class="message-title">
+                                        <span>GOTCHU</span>
+                                    </div>
+                                    <div class="message-text">
+                                        HI!
+                                </div>
+                                    <div class="message-time">
+                                        MAY 11
+                                    </div> -->
+                                    </div>
+                                    <div class="message-row you-message">
+                                   <!--- <div class="message-title">
+                                            <span>U_DO</span>
+                                        </div>
+                                        <div class="message-text">
+                                            HELLO!
+                                    </div>
+                                        <div class="message-time">
+                                            MAY 11
+                                        </div>  --->
+                            </div>
+                        </div>
+</div>
+
+                        <form  class="msg-text">
+                            <input type="text" name="msg" id="msg" placeholder="Type Message Here...." autocomplete="off">
+                            <button id="btn-send">
+                                <i class="fas fa-paper-plane">SEND</i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+        </div> 
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="app.js"></script>
+    </body>
+    </html>

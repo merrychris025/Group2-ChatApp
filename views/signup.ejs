@@ -1,0 +1,67 @@
+<!--- SIGN UP PAGE (ANOTHER PAGE) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="/img/logo.png">
+    <title>CHIKA BOT</title>
+
+    <!-- head3.ejs (CSS OF SIGN UP PAGE)-->
+    <%- include('templates/head3'); %>
+
+</head>
+
+<style>
+	body{
+    background-image:linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+	background-repeat: no repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	}
+	</style>
+
+<body>
+    
+    <div class="logo">
+        <img src = "/img/main.png" style="height: 100px; width: 100px;">
+    </div>
+    
+    <div class="create-account">
+        <h1>Create your account</h1>
+    </div>
+    <div class="signup-page">
+        <form>
+            <div class="username">
+                <h4 id="user">Username</h4>
+                    <input type="text" id="username" placeholder="Enter Username" required>
+            </div>
+            <div class="password">
+                <h4 id="pass">Password</h4>
+                    <input type="password" id="pass1" placeholder="Enter Password" required>
+            </div>
+            <div class="re-password">
+                <h4 id="re-pass">Re-enter Password</h4>
+                    <input type="password" id="pass2" placeholder="Enter Password" required>
+            </div>
+           
+			<button type="submit" id="signup-button">
+			<a href="/chat" >Sign Up</a> <!---- DIRECT TO CHAT UP ONCE SIGNED IN -->
+			</button>
+        </form>
+    </div>
+
+
+            <!---- DIRECT TO LOG IN PAGE -->
+    <div class="log-in">Already have an account?
+        <a href="/login">Log In</a>
+    </div>
+
+        <!--- FOOTER AREA (footer.ejs)-->
+    <footer>
+    <%- include('templates/footer'); %>
+    </footer>
+
+</body>
+</html>

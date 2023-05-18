@@ -1,0 +1,19 @@
+GUIDE TO THE FILES: 
+
+To run : node index.js
+
+Main page: LOG IN PAGE
+    File Location: message.ejs (HTML)
+                   head.ejs (CSS)
+                   modal.ejs (Modal)
+
+Next Page: CHAT APP PAGE
+    File Location: chat.ejs (HTML)
+
+Another Page: SIGN UP PAGE
+    File Location: signup.ejs (HTML)
+                   head3.ejs (CSS)
+
+Footer Part:
+    File Location: footer.ejs
+
