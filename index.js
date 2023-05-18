@@ -10,6 +10,7 @@ const defURL = "http://localhost:3000"
 
 //STATIC FILES:
 app.use(express.static('public'));
+app.use('/img',express.static(__dirname + 'public/img'));
 app.use('/css',express.static(__dirname + 'public/css'));
 app.use('/js',express.static(__dirname + 'public/js'));
 
