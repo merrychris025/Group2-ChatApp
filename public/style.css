@@ -33,6 +33,10 @@ body{
     border-bottom: 1px solid #051B3F;
 }
 
+.no-underline {
+    text-decoration: none;
+  }
+  
 .chat-header .logo{
     display: flex;
     align-items: center;
@@ -45,22 +49,41 @@ body{
     margin-left: 10px;
 }
 
-.chat-header p{
+.chat-uname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .chat-uname p {
     margin-right: 24px;
     cursor: pointer;
     opacity: 0.8;
-    justify-content: center;
-    align-items: center;
-}
+    font-weight: bold;
+  }
+  
 
-.chat-header button{
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    color: #000;
-    background: white;
-}
+  .my-button {
+    background-color: white; /* Set the background color */
+    border: none; /* Remove the border */
+    color: black; /* Set the text color */
+    padding: 7px 12px; /* Set the padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    font-size: 14px; /* Set the font size */
+    cursor: pointer; /* Add cursor on hover */
+    border-radius: 5px; /* Add rounded corners */
+    margin-right: 25px;
+  }
+
+  .container-button {
+    text-align: right;
+  }
+   
+  .my-button:hover {
+    background-color: #0B2A5B; /* Change the background color on hover */
+  }
+  
 .chat-section{
     padding: 20px;
 }

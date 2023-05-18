@@ -9,12 +9,11 @@
     
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- <link rel="website icon" type="png" href="img/logo.PNG"> -->
+    <link rel="website icon" type="png" href="img/logo.PNG"> 
     <title> CHIKA BOT </title>
 </head>
     <!--- CODE OF CHAT APP -->
     <body>
-       <!-----<div class="container-fluid">--->
         <div class="chat-container">
             <div class="chat-header">
                
@@ -23,11 +22,18 @@
                     <h3>CHIKA BOT</h3>
                 </div>
 
-                <p id="name"></p>
-                
-                <button type="submit" id="exit">
-                    <a href="/login" >EXIT</a> <!---- DIRECT TO CHAT UP ONCE SIGNED IN -->
-                    </button>    
+                <div class="chat-uname">
+                    <p>USER: </p>
+                    <p id="name"></p>
+                  </div>      
+
+                  <div class="container-button">
+                    <button class="my-button" type="submit" id="exit">
+                        <a href="/login" class="no-underline">EXIT</a> <!---- DIRECT TO CHAT UP ONCE SIGNED IN -->
+                    </button>  
+                  </div>
+
+                  
             </div>
 
                 <div class="chat-section">
